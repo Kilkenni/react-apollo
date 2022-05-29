@@ -20,8 +20,6 @@ class DescriptionFilter extends Filter {
 function ProductDetailsPage(props) {
   const { id } = props;
 
-  console.log(id)
-
   const PRODUCT_QUERY = gql`
     query Product($id: String!) {
       product(id: $id) {
